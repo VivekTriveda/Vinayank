@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vinayank Enterprises | Toiletries & Cleaning Products</title>
+
+<meta name="description" content="Vinayank Enterprises - Premium Toiletries, Floor Cleaners, Toilet Cleaners, Glass Cleaners, Air Fresheners and Housekeeping Products.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:
+linear-gradient(135deg,#f8fafc 0%,#eef6ff 100%);
+font-family:'Poppins',sans-serif;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* HEADER */
+
+.header{
+background:white;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+body{
+background:
+linear-gradient(135deg,#f8fafc 0%,#eef6ff 100%);
+font-family:'Poppins',sans-serif;
+}
+
+.logo img{
+height:70px;
+}
+
+.logo h2{
+color:#003B9A;
+font-size:26px;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#003B9A;
+}
+nav a{
+text-decoration:none;
+font-weight:600;
+color:#003B9A;
+transition:.3s;
+}
+nav a:hover{
+color:#66BB2A;
+}
+
+/* HERO */
+
+.hero{
+padding:80px 0;
+background:linear-gradient(rgba(0,59,154,.85),rgba(0,59,154,.85)),
+url('images/banner.jpg');
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.hero-content{
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+gap:40px;
+}
+
+.hero-text h1{
+font-size:55px;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.hero-text span{
+color:#7CFC00;
+}
+
+.hero-text p{
+font-size:18px;
+margin-bottom:30px;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+background:#66BB2A;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+margin-right:15px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.btn-outline{
+background:transparent;
+border:2px solid white;
+}
+
+.hero-image img{
+width:100%;
+border-radius:20px;
+}
+
+/* ABOUT */
+
+.section{
+padding:80px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.section-title h2{
+font-size:40px;
+color:#003B9A;
+margin-bottom:10px;
+}
+
+.section-title p{
+color:#666;
+}
+
+/* PRODUCTS */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.product-card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.product-card:hover{
+transform:translateY(-10px);
+}
+
+.product-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.product-content{
+padding:20px;
+}
+
+.product-content h3{
+color:#003B9A;
+margin-bottom:10px;
+}
+
+
+.product-content p{
+font-size:14px;
+color:#666;
+margin-bottom:15px;
+}
+
+.product-content a{
+display:inline-block;
+background:#66BB2A;
+color:white;
+padding:10px 20px;
+border-radius:30px;
+text-decoration:none;
+}
+
+/* WHY US */
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.feature-box{
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.feature-box h3{
+margin:15px 0;
+color:#003B9A;
+}
+
+/* CONTACT */
+
+.contact{
+background:#003B9A;
+color:white;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.contact-box h3{
+margin-bottom:20px;
+}
+
+.contact-box p{
+margin-bottom:10px;
+}
+
+footer{
+background:#001F54;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+}
+
+@media(max-width:768px){
+
+.hero-content,
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+.hero-text h1{
+font-size:35px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+<header class="header">
+<div class="container navbar">
+
+<div class="logo">
+<img src="images/Vinayank LOGO.jpeg">
+<h2>Vinayank Enterprises</h2>
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</div>
+</header>
+<section id="products" class="section">
+
+<div class="container">
+
+
+<div class="products">
+
+<!-- Product 1 -->
+<div class="product-card">
+<img src="images/147_Floor Cleaner (1).jpg" alt="Floor Cleaner">
+<div class="product-content">
+<h3>Relijol Floor Cleaner</h3>
+<p>Effective floor cleaning solution with long-lasting freshness.</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+<!-- Product 2 -->
+<div class="product-card">
+<img src="images/164_Toilet Cleaners.jpg" alt="Toilet Cleaner">
+<div class="product-content">
+<h3>Toilet Cleaner</h3>
+<p>Removes stains, germs and bad odour effectively.</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+<!-- Product 3 -->
+<div class="product-card">
+<img src="images/156_Glass Cleaner.jpg" alt="Glass Cleaner">
+<div class="product-content">
+<h3>Glass Cleaner</h3>
+<p>Crystal clear shine for windows, mirrors and glass surfaces.</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+<!-- Product 4 -->
+<div class="product-card">
+<img src="images/167_Air freshener.jpg" alt="Air Freshener">
+<div class="product-content">
+<h3>Air Freshener</h3>
+<p>Refreshing fragrance with long-lasting effect.</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+<!-- Product 5 -->
+<div class="product-card">
+<img src="images/150_Hand Wash.jpg" alt="Hand Wash">
+<div class="product-content">
+<h3>Hand Wash</h3>
+<p> 99.9% Germs Protection | Dermatologically Tested, Soft on Hand - Hand Wash .</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+<!-- Product 6 -->
+<div class="product-card">
+<img src="images/168_Floor Cleaner.jpg" alt="Sanitizer">
+<div class="product-content">
+<h3>Hand Sanitizer</h3>
+<p>Quick germ protection without water.</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+<!-- Product 7 -->
+<div class="product-card">
+<img src="images/bathroom Cleaner.jpg" alt="Bathroom Cleaner">
+<div class="product-content">
+<h3>Bathroom Cleaner</h3>
+<p>Removes tough stains and keeps bathrooms hygienic.</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+<!-- Product 8 -->
+<div class="product-card">
+<img src="images/floor cleaner.jpg" alt="Tile Cleaner">
+<div class="product-content">
+<h3>Tile Cleaner</h3>
+<p>Deep cleaning formula for floor and wall tiles.</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+<!-- Product 9 -->
+<div class="product-card">
+<img src="images/Cloth.jpeg" alt="Disinfectant">
+<div class="product-content">
+<h3>Floor Cleaner Cloth</h3>
+<p>Cotton Plane wave Pattern and clean the floor.</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+<!-- Product 10 -->
+<div class="product-card">
+<img src="images/150_Floor Cleaner.jpg" alt="Black Pehnyl">
+<div class="product-content">
+<h3>Black Pehnyl</h3>
+<p> Effective Dirt and Grime Removal: These cleaners are designed to effectively remove dirt, grime, and tough stains from various floor surfaces, including tiles, laminate, and sealed wood.
+ Disinfectant and Sanitizing Properties: Many black floor cleaners have disinfectant properties that kill germs and bacteria, leaving floors not only clean but also hygienic. Some products, like Lizol Floor Cleaner, claim to kill 99.9% of germs and bacteria.</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+<!-- Product 11 -->
+<div class="product-card">
+<img src="images/Napthelene.jpeg" alt="Napthalene Ball">
+<div class="product-content">
+<h3>Napthalene Ball</h3>
+<p>"Repels Insects and Pests: Effectively keeps moths, cockroaches, and other insects away from clothes, cupboards, and storage areas.
+Prevents Mold and Odor: Helps absorb moisture and prevents the growth of mildew, keeping fabrics and stored items fresh.
+Long-Lasting Fragrance: Releases a clean, pleasant scent that deodorizes wardrobes, drawers, and bathrooms for an extended period."
+</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+<!-- Product 12 -->
+<div class="product-card">
+<img src="images/Bleaching Powder.jpeg" alt="Bleaching Powder">
+<div class="product-content">
+<h3>Bleaching Powder</h3>
+<p>"Effective Disinfection: Helps kill germs, bacteria, and viruses, making it ideal for disinfecting surfaces, water, and laundry.
+ Whitening and Brightening: Can whiten and brighten clothes, surfaces, and areas where it's applied, removing tough stains and discoloration.
+ Mold and Mildew Control: Helps control mold and mildew growth, reducing unpleasant odors and promoting a cleaner environment."
+</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+<!-- Product 13 -->
+<div class="product-card">
+<img src="images/156_Glass Cleaner.jpg" alt="Glass Cleaner">
+<div class="product-content">
+<h3>Glass Cleaner</h3>
+<p>"Streak-Free Shine: Cleans glass surfaces effectively without leaving streaks or residue.
+Quick-Drying Formula: Dries rapidly for instant clarity and spotless results.
+Pleasant Fragrance: Leaves behind a fresh scent after every use, enhancing the cleaning experience."
+</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+<!-- Product 14 -->
+<div class="product-card">
+<img src="images/yellow_acid.jpeg" alt="Acid">
+<div class="product-content">
+<h3>Acid</h3>
+<p>effective cleaning and disinfection—offering a long-lasting fragrance and powerful germ-killing action for homes, offices, and commercial spaces.</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+<!-- Product 15 -->
+<div class="product-card">
+<img src="images/floor duster.jpeg" alt="Table Duster">
+<div class="product-content">
+<h3>Table Duster</h3>
+<p>Ideal for tables, counters and office furniture.</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+<!-- Product 16 -->
+<div class="product-card">
+<img src="images/155_Floor Cleaner.jpg" alt="Phenyl">
+<div class="product-content">
+<h3>Phenyl</h3>
+<p>High-strength white phenyl concentrate designed for effective cleaning and disinfection—offering a long-lasting fragrance and powerful germ-killing action for homes, offices, and commercial spaces.</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+<!-- Product 17 -->
+<div class="product-card">
+<img src="images/148_Air freshener.jpg" alt="Room Spray">
+<div class="product-content">
+<h3>Room Spray</h3>
+<p>Creates a pleasant and fresh atmosphere.</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+<!-- Product 18 -->
+<div class="product-card">
+<img src="images/155_Floor Cleaner (1).jpg" alt="Premium Floor Cleaner">
+<div class="product-content">
+<h3>Premium Floor Cleaner</h3>
+<p>Extra strength cleaning with fragrance protection.</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+<!-- Product 19 -->
+<div class="product-card">
+<img src="images/158_Glass Cleaner.jpg" alt="Premium Glass Cleaner">
+<div class="product-content">
+<h3>Premium Glass Cleaner</h3>
+<p>Streak-Free Shine: Cleans glass surfaces effectively without leaving streaks or residue.
+Quick-Drying Formula: Dries rapidly for instant clarity and spotless results.
+Pleasant Fragrance: Leaves behind a fresh scent after every use, enhancing the cleaning experience.
+</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+<!-- Product 20 -->
+<div class="product-card">
+<img src="images/176_Toilet Cleaners.jpg" alt="Premium Toilet Cleaner">
+<div class="product-content">
+<h3>Premium Toilet Cleaner</h3>
+<p>High-Efficiency Cleaning: Strong formulation removes stubborn stains, rust, and limescale while killing 99.9% of germs.Leaves the toilet bowl fresh-smelling with a rich, clean scent after every use.
+</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<footer>
+© 2026 Vinayank Enterprises. All Rights Reserved.
+</footer>
+
+<a class="whatsapp" href="https://wa.me/917259127526">☎</a>
+
+</body>
+</html>

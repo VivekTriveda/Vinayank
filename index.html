@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vinayank Enterprises | Toiletries & Cleaning Products</title>
+
+<meta name="description" content="Vinayank Enterprises - Premium Toiletries, Floor Cleaners, Toilet Cleaners, Glass Cleaners, Air Fresheners and Housekeeping Products.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:
+linear-gradient(135deg,#f8fafc 0%,#eef6ff 100%);
+font-family:'Poppins',sans-serif;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* HEADER */
+
+.header{
+background:white;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+body{
+background:
+linear-gradient(135deg,#f8fafc 0%,#eef6ff 100%);
+font-family:'Poppins',sans-serif;
+}
+
+.logo img{
+height:70px;
+}
+
+.logo h2{
+color:#003B9A;
+font-size:26px;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#003B9A;
+}
+nav a{
+text-decoration:none;
+font-weight:600;
+color:#003B9A;
+transition:.3s;
+}
+nav a:hover{
+color:#66BB2A;
+}
+
+/* HERO */
+
+.hero::before{
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+background:rgba(255,255,255,.08);
+border-radius:50%;
+top:-200px;
+right:-100px;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+width:300px;
+height:300px;
+background:rgba(255,255,255,.05);
+border-radius:50%;
+bottom:-100px;
+left:-100px;
+}
+.hero-content{
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+gap:40px;
+}
+
+.hero-text h1{
+font-size:55px;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.hero-text span{
+color:#7CFC00;
+}
+
+.hero-text p{
+font-size:18px;
+margin-bottom:30px;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+background:#66BB2A;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+margin-right:15px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.btn-outline{
+background:transparent;
+border:2px solid white;
+}
+
+
+/* ABOUT */
+
+.section{
+padding:80px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.section-title h2{
+font-size:40px;
+color:#003B9A;
+margin-bottom:10px;
+}
+
+.section-title p{
+color:#666;
+}
+
+/* PRODUCTS */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.product-card{
+
+background:white;
+
+border-radius:25px;
+
+overflow:hidden;
+
+box-shadow:
+0 20px 40px rgba(0,0,0,.08);
+
+transition:.4s;
+}
+
+.product-card:hover{
+
+transform:
+translateY(-12px)
+scale(1.02);
+
+box-shadow:
+0 25px 50px rgba(0,0,0,.18);
+}
+
+.product-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.product-content{
+padding:20px;
+}
+
+.product-content h3{
+color:#003B9A;
+margin-bottom:10px;
+}
+
+.product-content p{
+font-size:14px;
+color:#666;
+margin-bottom:15px;
+}
+
+.product-content a{
+display:inline-block;
+background:#66BB2A;
+color:white;
+padding:10px 20px;
+border-radius:30px;
+text-decoration:none;
+}
+
+/* WHY US */
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.feature-box{
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.feature-box h3{
+margin:15px 0;
+color:#003B9A;
+}
+
+/* CONTACT */
+
+.contact{
+background:#003B9A;
+color:white;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.contact-box h3{
+margin-bottom:20px;
+}
+
+.contact-box p{
+margin-bottom:10px;
+}
+
+.footer{
+
+background:#001F54;
+
+padding:60px 20px;
+
+text-align:center;
+
+color:white;
+}
+
+.footer h2{
+margin-bottom:15px;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+}
+.hero{
+min-height:90vh;
+display:flex;
+align-items:center;
+background:linear-gradient(
+135deg,
+#002868,
+#003B9A,
+#0F4FD9
+);
+color:white;
+padding:80px 0;
+}
+
+.hero-content{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.tag{
+display:inline-block;
+background:#66BB2A;
+padding:10px 20px;
+border-radius:30px;
+font-size:14px;
+font-weight:600;
+margin-bottom:20px;
+}
+
+.hero-text h1{
+font-size:65px;
+font-weight:700;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero-text h1 span{
+color:#7CFC00;
+}
+
+.hero-text p{
+font-size:18px;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+.hero-buttons{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.hero-products{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.hero-products img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:20px;
+background:white;
+padding:10px;
+box-shadow:0 20px 40px rgba(0,0,0,.25);
+transition:.4s;
+}
+
+.hero-products img:hover{
+transform:translateY(-10px);
+}
+
+@media(max-width:768px){
+
+.hero-content{
+grid-template-columns:1fr;
+}
+
+.hero-text h1{
+font-size:42px;
+}
+
+.hero-products{
+margin-top:30px;
+}
+
+
+
+
+@media(max-width:768px){
+
+.hero-content,
+.contact-grid{
+grid-template-columns:1fr;
+}
+}
+.hero-text h1{
+font-size:42px;
+}
+/* STATS SECTION */
+
+.stats{
+    padding: 60px 0;
+    margin-top: -50px;
+    position: relative;
+    z-index: 10;
+}
+
+.stats-grid{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap: 25px;
+}
+
+.stat-card{
+    background: #fff;
+    padding: 35px 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+    border-top: 5px solid #66BB2A;
+    cursor: pointer;
+}
+
+.stat-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,59,154,0.15);
+}
+
+.stat-card h2{
+    font-size: 42px;
+    font-weight: 700;
+    color: #003B9A;
+    margin-bottom: 10px;
+}
+
+.stat-card p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+}
+
+/* Mobile Responsive */
+
+@media(max-width:992px){
+    .stats-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:576px){
+    .stats-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card{
+        padding: 25px;
+    }
+
+    .stat-card h2{
+        font-size: 34px;
+    }
+}
+
+.icon{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.cta{
+background:linear-gradient(
+135deg,
+#003B9A,
+#66BB2A
+);
+
+padding:80px 20px;
+text-align:center;
+color:white;
+margin:80px 0;
+}
+.banner-strip{
+
+background:
+linear-gradient(
+90deg,
+#66BB2A,
+#8BC34A
+);
+
+padding:25px;
+
+text-align:center;
+
+color:white;
+
+font-size:24px;
+
+font-weight:600;
+}
+
+
+.cta h2{
+font-size:45px;
+margin-bottom:15px;
+}
+
+nav{
+display:none;
+}
+.hero-products{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.hero-products img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:20px;
+box-shadow:0 15px 30px rgba(0,0,0,.2);
+transition:.4s;
+}
+
+.hero-products img:hover{
+transform:scale(1.05);
+}
+
+}
+
+</style>
+</head>
+
+<body>
+<header class="header">
+<div class="container navbar">
+
+<div class="logo">
+<img src="images/Vinayank LOGO.jpeg">
+<h2>Vinayank Enterprises</h2>
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</div>
+</header>
+
+<section class="hero">
+
+<div class="container hero-content">
+
+<div class="hero-text">
+
+<h1>
+Premium <span>Cleaning</span> &
+Toiletries Products
+</h1>
+
+<p>
+Vinayank Enterprises provides high-quality floor cleaners,
+toilet cleaners, glass cleaners, room fresheners,
+hand wash, sanitizers and housekeeping products
+for homes, hotels, hospitals and commercial establishments.
+</p>
+
+<a href="products.html" class="btn">View Products</a>
+
+<a href="https://wa.me/917259127526" class="btn btn-outline">
+WhatsApp Us
+</a>
+
+</div>
+
+<div class="hero-products">
+
+<img src="images/153_Floor Cleaner.jpg">
+<img src="images/164_Toilet Cleaners.jpg">
+<img src="images/156_Glass Cleaner.jpg">
+<img src="images/167_Air freshener.jpg">
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="about" class="section">
+
+<div class="container">
+
+<div class="section-title">
+<h2>About Vinayank Enterprises</h2>
+<p>Clean Homes • Happy Lives</p>
+</div>
+
+<p style="text-align:center;max-width:900px;margin:auto;font-size:18px;line-height:1.8;">
+Vinayank Enterprises is a trusted supplier of premium
+toiletries and room cleaning products. We provide quality
+cleaning solutions for homes, hotels, hospitals,
+restaurants, schools and offices. Our commitment is to
+deliver reliable, affordable and effective cleaning products
+that maintain hygiene and customer satisfaction.
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Product Categories</h2>
+</div>
+
+<div class="features">
+
+<div class="feature-box">
+<h3>Floor Care</h3>
+<p>Premium floor cleaning products.</p>
+</div>
+
+<div class="feature-box">
+<h3>Bathroom Care</h3>
+<p>Toilet and tile cleaners.</p>
+</div>
+
+<div class="feature-box">
+<h3>Glass Care</h3>
+<p>Crystal clear glass solutions.</p>
+</div>
+
+<div class="feature-box">
+<h3>Air Care</h3>
+<p>Fresh and pleasant fragrances.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+<section id="products" class="section">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Our Products</h2>
+<p>Best Quality Cleaning & Hygiene Solutions</p>
+</div>
+
+<div class="products">
+
+<div class="product-card">
+<img src="images/153_Floor Cleaner.jpg">
+<div class="product-content">
+<h3>🧹 Floor Care</h3>
+<p>Powerful floor cleaning solution for homes and commercial spaces.</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+<div class="product-card">
+<img src="images/164_Toilet Cleaners.jpg">
+<div class="product-content">
+<h3>🧼 Toilet Care</h3>
+<p>Removes stains and kills germs effectively.</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+<div class="product-card">
+<img src="images/156_Glass Cleaner.jpg">
+<div class="product-content">
+<h3>🪟 Glass Care</h3>
+<p>Crystal-clear shine for mirrors, windows and glass surfaces.</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+<div class="product-card">
+<img src="images/167_Air freshener.jpg">
+<div class="product-content">
+<h3>🌸 Air Care</h3>    
+<p>Long-lasting fragrance for fresh and pleasant surroundings.</p>
+<a href="https://wa.me/917259127526">Enquire Now</a>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Why Choose Us</h2>
+</div>
+
+<div class="features">
+
+<div class="feature-box">
+<h3>Premium Quality</h3>
+<p>High-quality cleaning products with proven performance.</p>
+</div>
+
+<div class="feature-box">
+<h3>Affordable Pricing</h3>
+<p>Competitive pricing for retail and bulk orders.</p>
+</div>
+
+<div class="feature-box">
+<h3>Fast Delivery</h3>
+<p>Quick and reliable product supply.</p>
+</div>
+
+<div class="feature-box">
+<h3>Customer Support</h3>
+<p>Dedicated support and assistance for every customer.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-title">
+<h2>What Our Clients Say</h2>
+</div>
+
+<div class="features">
+
+<div class="feature-box">
+★★★★★
+<h3>Hotel Owner</h3>
+<p>
+Excellent quality cleaning products and fast delivery.
+</p>
+</div>
+
+<div class="feature-box">
+★★★★★
+<h3>Business Client</h3>
+<p>
+Reliable supplier with competitive pricing.
+</p>
+</div>
+
+<div class="feature-box">
+★★★★★
+<h3>Retail Customer</h3>
+<p>
+Very satisfied with product quality.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="section contact">
+
+<div class="container contact-grid">
+
+<div class="contact-box">
+<h3>Contact Information</h3>
+
+<p><strong>Contact Person:</strong> Vinayank</p>
+
+<p><strong>Phone:</strong> +91 7259127526</p>
+
+<p><strong>Email:</strong> vsbaba2611@gmail.com</p>
+
+<p>
+<strong>Address:</strong><br>
+Indralok Residency,<br>
+Indralok Marg,<br>
+Manpur Bairiya,<br>
+Patna – 800007
+</p>
+
+</div>
+
+<div class="contact-box">
+
+<h3>Business Hours</h3>
+
+<p>Monday - Saturday</p>
+
+<p>09:00 AM - 07:00 PM</p>
+
+<p>Bulk Orders Accepted</p>
+
+<p>Hotels • Hospitals • Offices • Institutions</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<footer class="footer">
+
+<h2>Vinayank Enterprises</h2>
+
+<p>
+Premium Cleaning & Hygiene Solutions
+</p>
+
+<p>
+📞 +91 7259127526
+</p>
+
+<p>
+✉ vsbaba2611@gmail.com
+</p>
+
+<p>
+📍 Patna, Bihar
+</p>
+
+</footer>
+
+</body>
+</html>
