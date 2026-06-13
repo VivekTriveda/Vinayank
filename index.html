@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <!-- Google Tag Manager -->
+    <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -273,6 +273,83 @@ margin:15px 0;
 color:#003B9A;
 }
 
+/* HAMBURGER MENU */
+
+.menu-toggle{
+display:none;
+font-size:32px;
+cursor:pointer;
+color:#003B9A;
+font-weight:bold;
+}
+
+@media(max-width:768px){
+
+.navbar{
+flex-wrap:wrap;
+}
+
+.logo h2{
+font-size:18px;
+}
+
+.logo img{
+height:55px;
+}
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+display:none;
+width:100%;
+margin-top:15px;
+}
+
+nav.active{
+display:block;
+animation:slideDown .3s ease;
+}
+
+nav ul{
+display:flex;
+flex-direction:column;
+gap:0;
+background:#fff;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+nav ul li{
+border-bottom:1px solid #eee;
+}
+
+nav ul li:last-child{
+border-bottom:none;
+}
+
+nav ul li a{
+display:block;
+padding:15px;
+text-align:center;
+font-size:16px;
+}
+
+}
+
+@keyframes slideDown{
+from{
+opacity:0;
+transform:translateY(-10px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
 /* CONTACT */
 
 .contact{
@@ -535,9 +612,7 @@ font-size:45px;
 margin-bottom:15px;
 }
 
-nav{
-display:none;
-}
+
 .hero-products{
 display:grid;
 grid-template-columns:repeat(2,1fr);
@@ -563,7 +638,7 @@ transform:scale(1.05);
 </head>
 
 <body>
-     <!-- Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2QC8SCQ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
@@ -571,11 +646,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="container navbar">
 
 <div class="logo">
-<img src="images/Vinayank LOGO.jpeg">
+<img src="images/Vinayank LOGO.jpeg" alt="Vinayank">
 <h2>Vinayank Enterprises</h2>
 </div>
 
-<nav>
+<div class="menu-toggle" id="menu-toggle">
+☰
+</div>
+
+<nav id="mobile-menu">
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="about.html">About</a></li>
@@ -607,8 +686,12 @@ for homes, hotels, hospitals and commercial establishments.
 
 <a href="products.html" class="btn">View Products</a>
 
-<a href="https://wa.me/917259127526" class="btn btn-outline">
-WhatsApp Us
+<a
+class="whatsapp"
+href="https://wa.me/917259127526?text=Hello%20Vinayank%20Enterprises"
+target="_blank"
+rel="noopener">
+☎
 </a>
 
 </div>
@@ -853,7 +936,26 @@ Patna – 800007
 
 </section>
 
+<script>
 
+const menuToggle =
+document.getElementById("menu-toggle");
+
+const mobileMenu =
+document.getElementById("mobile-menu");
+
+menuToggle.addEventListener("click", () => {
+mobileMenu.classList.toggle("active");
+});
+
+document.querySelectorAll("#mobile-menu a")
+.forEach(link => {
+link.addEventListener("click", () => {
+mobileMenu.classList.remove("active");
+});
+});
+
+</script>
 
 <footer class="footer">
 
