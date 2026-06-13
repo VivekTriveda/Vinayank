@@ -466,6 +466,25 @@ Patna – 800007
 
 </section>
 
+<script>
+const menuToggle = document.getElementById("menu-toggle");
+const mobileMenu = document.getElementById("mobile-menu");
+
+if(menuToggle && mobileMenu){
+
+    menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("active");
+    });
+
+    document.querySelectorAll("#mobile-menu a")
+    .forEach(link => {
+        link.addEventListener("click", () => {
+            mobileMenu.classList.remove("active");
+        });
+    });
+
+}
+</script>
 <footer>
 © 2026 Vinayank Enterprises. All Rights Reserved.
 </footer>
